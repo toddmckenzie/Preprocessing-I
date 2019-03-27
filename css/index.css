@@ -281,6 +281,9 @@ header button:hover {
 @media (max-width: 500px) {
   .bottom-section .hobbies {
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .bottom-section .hobbies h2 {
@@ -291,6 +294,7 @@ header button:hover {
   .bottom-section .hobbies h2 {
     text-align: center;
     width: 100%;
+    margin-left: 45%;
   }
 }
 .bottom-section .hobbies li {
@@ -298,6 +302,13 @@ header button:hover {
   font-size: 1.6rem;
   line-height: 3rem;
   list-style-type: circle;
+}
+@media (max-width: 500px) {
+  .bottom-section .hobbies li {
+    font-size: 2.5rem;
+    width: 100%;
+    margin-left: 40%;
+  }
 }
 .work {
   padding: 20px 2%;

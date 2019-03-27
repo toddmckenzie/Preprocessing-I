@@ -189,6 +189,9 @@ header {
 		width: 45%;
 		@media(max-width:500px){
 			padding-top: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 		h2 {
 		font-size: 3rem;
@@ -196,13 +199,19 @@ header {
 		@media(max-width:500px){
 			text-align: center;
 			width: 100%;
-		}
+			margin-left: 45%;
+			}
 		}
 		li {
 		align-self: flex-end;
 		font-size: 1.6rem;
 		line-height: 3rem;
 		list-style-type: circle;
+		@media(max-width:500px){
+			font-size: 2.5rem;
+			width: 100%;
+			margin-left: 40%;
+		}
 		}
 	}
 }
