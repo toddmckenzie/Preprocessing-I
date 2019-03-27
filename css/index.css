@@ -145,25 +145,64 @@ header {
   background: #4267b2;
   color: white;
 }
+@media (max-width: 500px) {
+  header {
+    height: 80%;
+  }
+}
 header section {
   display: flex;
   justify-content: space-around;
   padding: 10px 3%;
+}
+@media (max-width: 500px) {
+  header section {
+    flex-direction: column;
+    font-size: 3rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    color: white;
+  }
 }
 header .nameAndPhoto {
   display: flex;
   flex-direction: column;
 }
 header .nameAndPhoto h1 {
-  font-size: 50px;
+  font-size: 5rem;
   border-bottom: 1px solid gray;
   padding-bottom: 10px;
+}
+@media (max-width: 775px) {
+  header .nameAndPhoto h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 625px) {
+  header .nameAndPhoto h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  header .nameAndPhoto h1 {
+    font-size: 2.5rem;
+    align-self: center;
+    padding-top: 25px;
+  }
 }
 header .nameAndPhoto img {
   height: auto;
   width: 50%;
 }
-header .my-image {
+@media (max-width: 500px) {
+  header .nameAndPhoto img {
+    height: auto;
+    width: 100%;
+  }
+}
+header .nameAndPhoto .my-image {
   padding: 10px 2%;
   order: -1;
 }
@@ -171,6 +210,16 @@ header a {
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  header a {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+  }
 }
 header a:hover {
   transform: scale(1.2);
@@ -183,6 +232,13 @@ header button {
   background: #D3D3D3;
   color: black;
 }
+@media (max-width: 500px) {
+  header button {
+    margin-left: 30%;
+    height: 60px;
+    text-decoration: none;
+  }
+}
 header button:hover {
   color: white;
   background: black;
@@ -192,10 +248,23 @@ header button:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .bottom-section {
+    flex-direction: column;
+  }
+}
 .bottom-section .why {
   width: 45%;
   padding: 10px 3%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .bottom-section .why {
+    width: 95%;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+  }
 }
 .bottom-section .why h2 {
   font-size: 3rem;
@@ -209,9 +278,20 @@ header button:hover {
   padding: 10px 3%;
   width: 45%;
 }
+@media (max-width: 500px) {
+  .bottom-section .hobbies {
+    padding-top: 30px;
+  }
+}
 .bottom-section .hobbies h2 {
   font-size: 3rem;
   padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .bottom-section .hobbies h2 {
+    text-align: center;
+    width: 100%;
+  }
 }
 .bottom-section .hobbies li {
   align-self: flex-end;
