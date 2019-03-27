@@ -53,19 +53,22 @@ table {
     box-sizing: border-box;
 }
 
+@backgroundcolor: #D3D3D3;
+
 html, body {
     height: 100%;
 		max-width: 900px;
 		width: 100%;
 		margin: 0 auto;
+		font-size: 62.5%;
 }
 
 header {
-	 border:1px solid red;
 	 height: 60%;
 	 margin: 20px 0%;
 	 padding: 5px 5%;
-
+	 background: @backgroundcolor;
+	 border: 2px solid black;
 	 section {
 		 display: flex;
 		 justify-content: space-around;
@@ -75,18 +78,96 @@ header {
 	.nameAndPhoto{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		h1 {
+			font-size: 50px;
+			border-bottom: 1px solid gray;
+			padding-bottom: 10px;
+			}
+		img {
+			height: auto;
+			width: 50%;
+		}
 	}
 	.my-image{
 		padding: 10px 2%;
-
+		order: -1;
 	}
-		h1 {
-			font-size: 50px;
+
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 1.6rem;
+	}
+	a:hover {
+		color: red;
+		transform: scale(1.2);
+	}
+	button {
+		height: 30px;
+		border-radius: 10px;
+		margin-top: 5%;
+	}
+	button:hover {
+		color: white;
+		background: black;
+		transform: scale(1.2);
+	}
+}
+
+.bottom-section {
+	display: flex;
+	border: 1px solid red;
+	justify-content: space-around;
+	.why{
+		width: 45%;
+		padding: 10px 3%;
+		font-size: 1.6rem;
+		h2 {
+			font-size: 3rem;
+			padding-bottom: 10px;
+			}
+			p {
+				line-height: 2rem;
+			}
+	}
+	.hobbies {
+		border: 1px solid red;
+		line-height: 2rem;
+		font-size: 1.6rem;
+		padding: 10px 3%;
+		width: 45%;
+		h2 {
+		font-size: 3rem;
+		color: blue;
+		padding-bottom: 10px;
 		}
-	img {
-		height: auto;
-		width: 50%;
+		li {
+		align-self: flex-end;
+		}
 	}
+}
 
+.work {
+	padding: 20px 2%;
+	h2 {
+		font-size: 2.4rem;
+		padding-bottom: 15px;
+		border-bottom: 2px solid black;
+	}
+	li {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 1.6rem;
+		border-bottom: 1px solid black;
+	}
+}
+
+
+footer {
+	padding: 5px 2%;
+	font-size: 2.0rem;
+	li {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
 }
