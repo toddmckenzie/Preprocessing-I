@@ -148,6 +148,7 @@ header {
 @media (max-width: 500px) {
   header {
     height: 80%;
+    margin-top: 0;
   }
 }
 header section {
@@ -190,6 +191,8 @@ header .nameAndPhoto h1 {
     font-size: 2.5rem;
     align-self: center;
     padding-top: 25px;
+    margin-bottom: 20px;
+    border-bottom: none;
   }
 }
 header .nameAndPhoto img {
@@ -223,7 +226,6 @@ header a {
 }
 header a:hover {
   transform: scale(1.2);
-  text-decoration: underline;
 }
 header button {
   height: 30px;
@@ -236,7 +238,6 @@ header button {
   header button {
     margin-left: 30%;
     height: 60px;
-    text-decoration: none;
   }
 }
 header button:hover {
@@ -270,6 +271,11 @@ header button:hover {
   font-size: 3rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .bottom-section .why h2 {
+    text-align: center;
+  }
+}
 .bottom-section .why p {
   line-height: 2rem;
 }
@@ -281,20 +287,16 @@ header button:hover {
 @media (max-width: 500px) {
   .bottom-section .hobbies {
     padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 95%;
   }
 }
 .bottom-section .hobbies h2 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   padding-bottom: 30px;
 }
 @media (max-width: 500px) {
   .bottom-section .hobbies h2 {
     text-align: center;
-    width: 100%;
-    margin-left: 45%;
   }
 }
 .bottom-section .hobbies li {
@@ -306,8 +308,7 @@ header button:hover {
 @media (max-width: 500px) {
   .bottom-section .hobbies li {
     font-size: 2.5rem;
-    width: 100%;
-    margin-left: 40%;
+    margin-left: 20%;
   }
 }
 .work {
@@ -317,6 +318,11 @@ header button:hover {
   font-size: 2.4rem;
   padding-bottom: 15px;
   border-bottom: 2px solid black;
+}
+@media (max-width: 500px) {
+  .work h2 {
+    text-align: center;
+  }
 }
 .work li {
   padding-top: 15px;
