@@ -53,7 +53,8 @@ table {
     box-sizing: border-box;
 }
 
-@backgroundcolor: #D3D3D3;
+@backgroundcolor: #4267b2;
+//#D3D3D3gray
 
 html, body {
     height: 100%;
@@ -69,6 +70,7 @@ header {
 	 padding: 5px 5%;
 	 background: @backgroundcolor;
 	 border: 2px solid black;
+	 color: white;
 	 section {
 		 display: flex;
 		 justify-content: space-around;
@@ -95,18 +97,19 @@ header {
 
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
 		font-size: 1.6rem;
 	}
 	a:hover {
-		color: red;
 		transform: scale(1.2);
 		text-decoration: underline;
 	}
 	button {
 		height: 30px;
 		border-radius: 10px;
-		margin-top: 5%;
+		margin-top: 15px;
+		background: #D3D3D3;
+		color: black;
 	}
 	button:hover {
 		color: white;
