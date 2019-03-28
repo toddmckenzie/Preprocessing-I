@@ -1,1 +1,340 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 62.5%;
+}
+header {
+  height: 60%;
+  margin: 20px 0%;
+  padding: 5px 5%;
+  background: #4267b2;
+  color: white;
+}
+@media (max-width: 500px) {
+  header {
+    height: 80%;
+    margin-top: 0;
+  }
+}
+header section {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 3%;
+}
+@media (max-width: 500px) {
+  header section {
+    flex-direction: column;
+    font-size: 3rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    color: white;
+  }
+}
+header .nameAndPhoto {
+  display: flex;
+  flex-direction: column;
+}
+header .nameAndPhoto h1 {
+  font-size: 5rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+@media (max-width: 775px) {
+  header .nameAndPhoto h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 625px) {
+  header .nameAndPhoto h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  header .nameAndPhoto h1 {
+    font-size: 2.5rem;
+    align-self: center;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    border-bottom: none;
+  }
+}
+header .nameAndPhoto img {
+  height: auto;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  header .nameAndPhoto img {
+    height: auto;
+    width: 100%;
+  }
+}
+header .nameAndPhoto .my-image {
+  padding: 10px 2%;
+  order: -1;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  header a {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+  }
+}
+header a:hover {
+  transform: scale(1.2);
+}
+header button {
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background: #D3D3D3;
+  color: black;
+}
+@media (max-width: 500px) {
+  header button {
+    margin-left: 30%;
+    height: 60px;
+  }
+}
+header button:hover {
+  color: white;
+  background: black;
+  transform: scale(1.2);
+}
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    flex-direction: column;
+  }
+}
+.bottom-section .why {
+  width: 45%;
+  padding: 10px 3%;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .bottom-section .why {
+    width: 95%;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+  }
+}
+.bottom-section .why h2 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .bottom-section .why h2 {
+    text-align: center;
+  }
+}
+.bottom-section .why p {
+  line-height: 2rem;
+}
+.bottom-section .hobbies {
+  line-height: 2rem;
+  padding: 10px 3%;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .bottom-section .hobbies {
+    padding-top: 30px;
+    width: 95%;
+  }
+}
+.bottom-section .hobbies h2 {
+  font-size: 2.4rem;
+  padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .bottom-section .hobbies h2 {
+    text-align: center;
+  }
+}
+.bottom-section .hobbies li {
+  align-self: flex-end;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  list-style-type: circle;
+}
+@media (max-width: 500px) {
+  .bottom-section .hobbies li {
+    font-size: 2.5rem;
+    margin-left: 20%;
+  }
+}
+.work {
+  padding: 20px 2%;
+}
+.work h2 {
+  font-size: 2.4rem;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+@media (max-width: 500px) {
+  .work h2 {
+    text-align: center;
+  }
+}
+.work li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid black;
+}
+footer {
+  padding: 5px 2%;
+  font-size: 2rem;
+}
+footer li {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}

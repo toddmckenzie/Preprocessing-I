@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -53,7 +53,192 @@ table {
     box-sizing: border-box;
 }
 
+@backgroundcolor: #4267b2;
+//#D3D3D3gray
+
 html, body {
     height: 100%;
+		max-width: 900px;
+		width: 100%;
+		margin: 0 auto;
+		font-size: 62.5%;
 }
 
+header {
+	 height: 60%;
+	 margin: 20px 0%;
+	 padding: 5px 5%;
+	 background: @backgroundcolor;
+	 color: white;
+	 @media(max-width:500px){
+		 height:80%;
+		 margin-top: 0;
+	 }
+
+	 section {
+		 display: flex;
+		 justify-content: space-around;
+		 padding: 10px 3%;
+		 @media(max-width:500px){
+			 flex-direction: column;
+			 font-size: 3rem;
+			 border-bottom: 1px solid gray;
+			 margin-bottom: 20px;
+			 padding-bottom: 20px;
+			 align-items: center;
+			 color: white;
+		 }
+	}
+
+	.nameAndPhoto{
+		display: flex;
+		flex-direction: column;
+		h1 {
+			font-size: 5rem;
+			border-bottom: 1px solid gray;
+			padding-bottom: 10px;
+			@media(max-width:775px){
+				font-size: 4rem;
+			}
+			@media(max-width:625px){
+				font-size: 3rem;
+			}
+			@media(max-width: 500px){
+				font-size: 2.5rem;
+				align-self: center;
+				padding-top: 25px;
+				margin-bottom: 20px;
+				border-bottom: none;
+			}
+		}
+		img {
+			height: auto;
+			width: 50%;
+
+			@media(max-width:500px){
+				height: auto;
+				width: 100%;
+			}
+		}
+	.my-image{
+		padding: 10px 2%;
+		order: -1;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 1.6rem;
+		@media(max-width:500px){
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+			border-bottom: 1px solid gray;
+			width: 100%;
+			text-align: center;
+			align-self: center;
+		}
+	}
+	a:hover {
+		transform: scale(1.2);
+	}
+	button {
+		height: 30px;
+		border-radius: 10px;
+		margin-top: 15px;
+		background: #D3D3D3;
+		color: black;
+		@media(max-width: 500px){
+			margin-left:30%;
+			height: 60px;
+		}
+	}
+	button:hover {
+		color: white;
+		background: black;
+		transform: scale(1.2);
+		}
+	}
+
+
+.bottom-section {
+	display: flex;
+	justify-content: space-around;
+	@media(max-width:500px){
+		flex-direction: column;
+	}
+	.why{
+		width: 45%;
+		padding: 10px 3%;
+		font-size: 1.6rem;
+		@media(max-width:500px){
+			width: 95%;
+			font-size: 2rem;
+			border-bottom: 1px solid gray;
+			padding-bottom: 20px;
+		}
+		h2 {
+			font-size: 3rem;
+			padding-bottom: 10px;
+			@media(max-width:500px){
+				text-align: center;
+				}
+			}
+			p {
+				line-height: 2rem;
+			}
+	}
+	.hobbies {
+		line-height: 2rem;
+		padding: 10px 3%;
+		width: 45%;
+		@media(max-width:500px){
+			padding-top: 30px;
+			width: 95%;
+		}
+		h2 {
+		font-size: 2.4rem;
+		padding-bottom: 30px;
+		@media(max-width:500px){
+			text-align: center;
+			}
+		}
+		li {
+		align-self: flex-end;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		list-style-type: circle;
+		@media(max-width:500px){
+			font-size: 2.5rem;
+			margin-left: 20%;
+		}
+		}
+	}
+}
+
+.work {
+	padding: 20px 2%;
+	h2 {
+		font-size: 2.4rem;
+		padding-bottom: 15px;
+		border-bottom: 2px solid black;
+		@media(max-width: 500px){
+			text-align: center;
+		}
+	}
+	li {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 1.6rem;
+		border-bottom: 1px solid black;
+	}
+}
+
+
+footer {
+	padding: 5px 2%;
+	font-size: 2.0rem;
+	li {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+}
